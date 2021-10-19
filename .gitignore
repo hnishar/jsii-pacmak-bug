@@ -1,0 +1,20 @@
+# VSCode extension
+.vscode/
+/.favorites.json
+
+# TypeScript incremental build states
+*.tsbuildinfo
+tsconfig.json
+# Local state files & OS specifics
+node_modules/
+lib/*.js
+lib/*.d.ts
+
+# CDK Context & Staging files
+cdk.context.json
+.cdk.staging/
+cdk.out/
+source/patterns/@aws-solutions-constructs/**/cdk-integ.out/
+
+dist/*
+.DS_Store

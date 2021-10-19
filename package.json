@@ -1,0 +1,53 @@
+{
+  "name": "jsii-pacmak-bug",
+  "version": "1.0.0",
+  "description": "Testing jsii-pacmak",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awslabs/aws-solutions-constructs.git",
+    "directory": "source"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com"
+  },
+  "private": true,  
+  "scripts": {
+    "jsii": "jsii",
+    "jsii-pacmak": "jsii-pacmak",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"    
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jsii": "^1.39.0",
+    "jsii-pacmak": "^1.39.0",
+    "typescript": "~3.9.7",
+    "@aws-cdk/assert": "2.0.0-rc.1",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^10.3.0",
+    "aws-cdk-lib": "2.0.0-rc.23",
+    "constructs": "^10.0.0"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.0.0-rc.23",
+    "constructs": "^10.0.0"
+  },  
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "dotnet": {
+        "namespace": "Amazon.Constructs.AWS.Test",
+        "packageId": "Amazon.Constructs.AWS.Test",
+        "signAssembly": true,
+        "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png"
+      }
+    }
+  }
+}
